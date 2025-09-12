@@ -258,3 +258,4 @@ D:\dev\K23CNT2_PRJ2\K23CNT2_NongVanHung_Project2\FastFood\bin\Debug\net8.0\runti
 D:\dev\K23CNT2_PRJ2\K23CNT2_NongVanHung_Project2\FastFood\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 D:\dev\K23CNT2_PRJ2\K23CNT2_NongVanHung_Project2\FastFood\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 D:\dev\K23CNT2_PRJ2\K23CNT2_NongVanHung_Project2\FastFood\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+D:\dev\K23CNT2_PRJ2\K23CNT2_NongVanHung_Project2\FastFood\obj\Debug\net8.0\FastFood.sourcelink.json

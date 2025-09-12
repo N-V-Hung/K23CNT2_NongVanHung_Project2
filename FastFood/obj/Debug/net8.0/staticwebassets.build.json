@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "O2SrzpS7u8+DEElP0/s8sxOGTGP6Fw+O18dGlQQRhZw=",
+  "Hash": "pVzOC1eJhDpKZp45mxgx2qMlKpFSTDoKs0re+c2BXNs=",
   "Source": "FastFood",
   "BasePath": "_content/FastFood",
   "Mode": "Default",
@@ -91,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\wwwroot\\image\\banner.jpg",
+      "SourceId": "FastFood",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\wwwroot\\",
+      "BasePath": "_content/FastFood",
+      "RelativePath": "image/banner.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\banner.jpg"
     },
     {
       "Identity": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\wwwroot\\image\\coca.jpg",

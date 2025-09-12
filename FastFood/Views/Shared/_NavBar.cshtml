@@ -26,15 +26,16 @@
             }
         </ul>
     </div>
+    <!-- ✅ Phần Login/Logout -->
     <div class="d-flex">
-        @if (Context.Session.GetInt32("UserId") != null)
+        @if (User.Identity != null && User.Identity.IsAuthenticated)
         {
-            <span class="navbar-text">Xin chào!</span>
-            <a class="btn btn-link" asp-area="" asp-controller="Account" asp-action="Logout">Đăng xuất</a>
+            <span class="navbar-text text-white me-2">Xin chào @User.Identity.Name!</span>
+            <a class="btn btn-outline-light" asp-controller="Account" asp-action="Logout">Đăng xuất</a>
         }
         else
         {
-            <a class="btn btn-link" asp-area="" asp-controller="Account" asp-action="Login">Đăng nhập</a>
+            <a class="btn btn-outline-warning" asp-controller="Account" asp-action="Login">Đăng nhập</a>
         }
     </div>
 </nav>
