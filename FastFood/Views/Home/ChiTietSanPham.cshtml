@@ -1,0 +1,13 @@
+﻿@model FastFood.Models.SanPham
+
+<h2>@Model.TenSp</h2>
+<img src="~/image/@Model.Anh"
+     alt="@Model.TenSp"
+     class="card-img-top"
+     style="height:200px;width:250px" />
+<p>@Model.MoTa</p>
+<p><strong>Giá: </strong>@Model.Gia.ToString("N0") đ</p>
+<p><strong>Danh mục: </strong>@Model.MaDmNavigation?.TenDm</p>
+
+<a asp-controller="Cart" asp-action="Add" asp-route-id="@Model.MaSp" class="btn btn-success">Thêm vào giỏ</a>
+<a asp-action="Index" class="btn btn-secondary">Quay lại</a>

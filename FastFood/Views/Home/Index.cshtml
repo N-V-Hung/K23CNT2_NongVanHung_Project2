@@ -1,0 +1,58 @@
+﻿@model IEnumerable<FastFood.Models.DanhMuc>
+
+<h2>🍔 Trang chủ - Menu đồ ăn</h2>
+
+<div class="box-30">
+
+    <div class="input-group mt-3" style="max-width:500px; width:100%; margin:auto;">
+
+        <input type="search" class="form-control ps-4" placeholder="Enter to search..." />
+
+        <button type="button" class="btn btn-success">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+
+    </div>
+
+</div>
+<hr />
+
+@foreach (var dm in Model)
+{
+    <h3>@dm.TenDm</h3>   
+
+    <div class="row">
+
+        
+        @foreach (var sp in dm.SanPhams)
+        {
+            <div class="col-md-3">
+                <div class="card mb-3">
+                    <img src="~/image/@sp.Anh"
+                         alt="@sp.TenSp"
+                         class="card-img-top"
+                         style="height:150px;object-fit:cover" />
+                    <div class="card-body">
+                        <h5 class="card-title">@sp.TenSp</h5>
+                        <p class="card-text">@sp.MoTa</p>
+                        <p><strong>@sp.Gia.ToString("N0") đ</strong></p>
+
+                        <a asp-controller="Home"
+                           asp-action="ChiTietSanPham"
+                           asp-route-id="@sp.MaSp"
+                           class="btn btn-sm btn-info">
+                            Chi tiết
+                        </a>
+
+                        <a asp-controller="Cart"
+                           asp-action="Add"
+                           asp-route-id="@sp.MaSp"
+                           class="btn btn-sm btn-success">
+                            Thêm vào giỏ
+                        </a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
