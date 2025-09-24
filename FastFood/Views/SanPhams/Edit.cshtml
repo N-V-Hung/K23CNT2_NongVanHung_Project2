@@ -1,54 +1,68 @@
 ﻿@model FastFood.Models.SanPham
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Chỉnh sửa sản phẩm";
 }
 
-<h1>Edit</h1>
-
-<h4>SanPham</h4>
+<h1 class="page-title">✏ Chỉnh sửa sản phẩm</h1>
 <hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="MaSp" />
-            <div class="form-group">
-                <label asp-for="TenSp" class="control-label"></label>
-                <input asp-for="TenSp" class="form-control" />
-                <span asp-validation-for="TenSp" class="text-danger"></span>
+
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card shadow-sm border-0">
+            <div class="card-body">
+                <form asp-action="Edit">
+                    <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+                    <input type="hidden" asp-for="MaSp" />
+
+                    <div class="form-group mb-3">
+                        <label asp-for="TenSp" class="form-label">Tên sản phẩm</label>
+                        <input asp-for="TenSp" class="form-control" placeholder="Nhập tên sản phẩm" />
+                        <span asp-validation-for="TenSp" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label asp-for="MoTa" class="form-label">Mô tả</label>
+                        <textarea asp-for="MoTa" class="form-control" rows="3" placeholder="Nhập mô tả sản phẩm"></textarea>
+                        <span asp-validation-for="MoTa" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label asp-for="Gia" class="form-label">Giá bán</label>
+                        <input asp-for="Gia" type="number" class="form-control" placeholder="Nhập giá sản phẩm" />
+                        <span asp-validation-for="Gia" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label asp-for="Anh" class="form-label">Hình ảnh</label>
+                        <input asp-for="Anh" class="form-control" placeholder="Tên file ảnh (vd: sp1.jpg)" />
+                        <span asp-validation-for="Anh" class="text-danger"></span>
+                        @if (!string.IsNullOrEmpty(Model.Anh))
+                        {
+                            <div class="mt-2">
+                                <img src="~/images/@Model.Anh" alt="@Model.TenSp" class="img-thumbnail" style="max-width:150px;" />
+                            </div>
+                        }
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label asp-for="MaDm" class="form-label">Danh mục</label>
+                        <select asp-for="MaDm" class="form-control" asp-items="ViewBag.MaDm"></select>
+                        <span asp-validation-for="MaDm" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group text-end">
+                        <input type="submit" value="💾 Lưu thay đổi" class="btn btn-success" />
+                        <a asp-action="Index" class="btn btn-secondary">⬅ Quay lại</a>
+                    </div>
+                </form>
             </div>
-            <div class="form-group">
-                <label asp-for="MoTa" class="control-label"></label>
-                <input asp-for="MoTa" class="form-control" />
-                <span asp-validation-for="MoTa" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Gia" class="control-label"></label>
-                <input asp-for="Gia" class="form-control" />
-                <span asp-validation-for="Gia" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Anh" class="control-label"></label>
-                <input asp-for="Anh" class="form-control" />
-                <span asp-validation-for="Anh" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="MaDm" class="control-label"></label>
-                <select asp-for="MaDm" class="form-control" asp-items="ViewBag.MaDm"></select>
-                <span asp-validation-for="MaDm" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
+        </div>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\FastFood.bundle.scp.css"
     },
     {
+      "Id": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\wwwroot\\css\\custom.css",
+      "PackagePath": "staticwebassets\\css\\custom.css"
+    },
+    {
       "Id": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -13,28 +17,28 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\wwwroot\\image\\banner.jpg",
-      "PackagePath": "staticwebassets\\image\\banner.jpg"
+      "Id": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\wwwroot\\images\\banner.jpg",
+      "PackagePath": "staticwebassets\\images\\banner.jpg"
     },
     {
-      "Id": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\wwwroot\\image\\coca.jpg",
-      "PackagePath": "staticwebassets\\image\\coca.jpg"
+      "Id": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\wwwroot\\images\\coca.jpg",
+      "PackagePath": "staticwebassets\\images\\coca.jpg"
     },
     {
-      "Id": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\wwwroot\\image\\flan.jpg",
-      "PackagePath": "staticwebassets\\image\\flan.jpg"
+      "Id": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\wwwroot\\images\\flan.jpg",
+      "PackagePath": "staticwebassets\\images\\flan.jpg"
     },
     {
-      "Id": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\wwwroot\\image\\hamburger.jpg",
-      "PackagePath": "staticwebassets\\image\\hamburger.jpg"
+      "Id": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\wwwroot\\images\\hamburger.jpg",
+      "PackagePath": "staticwebassets\\images\\hamburger.jpg"
     },
     {
-      "Id": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\wwwroot\\image\\pizza.jpg",
-      "PackagePath": "staticwebassets\\image\\pizza.jpg"
+      "Id": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\wwwroot\\images\\pizza.jpg",
+      "PackagePath": "staticwebassets\\images\\pizza.jpg"
     },
     {
-      "Id": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\wwwroot\\image\\trasua.jpg",
-      "PackagePath": "staticwebassets\\image\\trasua.jpg"
+      "Id": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\wwwroot\\images\\trasua.jpg",
+      "PackagePath": "staticwebassets\\images\\trasua.jpg"
     },
     {
       "Id": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\wwwroot\\js\\site.js",

@@ -1,0 +1,29 @@
+﻿/* wwwroot/css/custom.css */
+
+.page-title {
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.card {
+    border-radius: 10px;
+}
+
+.product-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+dl dt {
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+dl dd {
+    color: #555;
+}
+

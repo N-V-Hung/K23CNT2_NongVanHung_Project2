@@ -1,47 +1,50 @@
 ﻿@model FastFood.Models.DonHang
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Tạo đơn hàng";
 }
 
-<h1>Create</h1>
+<h1 class="page-title">➕ Tạo đơn hàng</h1>
 
-<h4>DonHang</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
+<div class="card custom-card shadow-sm">
+    <div class="card-body">
         <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="TrangThai" class="control-label"></label>
+            <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+            <div class="mb-3">
+                <label asp-for="NgayDat" class="form-label fw-bold">📅 Ngày đặt</label>
+                <input asp-for="NgayDat" class="form-control" type="date" />
+                <span asp-validation-for="NgayDat" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="TrangThai" class="form-label fw-bold">📌 Trạng thái</label>
                 <input asp-for="TrangThai" class="form-control" />
                 <span asp-validation-for="TrangThai" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="PhuongThucTt" class="control-label"></label>
+
+            <div class="mb-3">
+                <label asp-for="PhuongThucTt" class="form-label fw-bold">💳 Phương thức thanh toán</label>
                 <input asp-for="PhuongThucTt" class="form-control" />
                 <span asp-validation-for="PhuongThucTt" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="TongTien" class="control-label"></label>
+
+            <div class="mb-3">
+                <label asp-for="TongTien" class="form-label fw-bold">💰 Tổng tiền</label>
                 <input asp-for="TongTien" class="form-control" />
                 <span asp-validation-for="TongTien" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="MaKh" class="control-label"></label>
-                <select asp-for="MaKh" class ="form-control" asp-items="ViewBag.MaKh"></select>
+
+            <div class="mb-3">
+                <label asp-for="MaKh" class="form-label fw-bold">👤 Khách hàng</label>
+                <select asp-for="MaKh" class="form-select" asp-items="ViewBag.MaKh"></select>
+                <span asp-validation-for="MaKh" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+
+            <div class="d-flex justify-content-between">
+                <a asp-action="Index" class="btn btn-outline-secondary">⬅ Quay lại</a>
+                <button type="submit" class="btn btn-success">💾 Lưu</button>
             </div>
         </form>
     </div>
 </div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}

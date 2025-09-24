@@ -1,5 +1,6 @@
 ﻿using FastFood.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 
 namespace FastFood.Controllers
@@ -13,16 +14,19 @@ namespace FastFood.Controllers
             _context = context;
         }
 
+        // 📌 Lấy role & customerId từ session
+        private string? GetRole() => HttpContext.Session.GetString("Role");
+        private int? GetCustomerId() => HttpContext.Session.GetInt32("CustomerId");
+
         // GET: DonHangs
         public async Task<IActionResult> Index()
         {
-            var role = HttpContext.Session.GetString("Role");
-            var customerId = HttpContext.Session.GetInt32("CustomerId");
+            var role = GetRole();
+            var customerId = GetCustomerId();
 
             IQueryable<DonHang> query = _context.DonHangs
                 .Include(d => d.MaKhNavigation);
 
-            // Nếu là khách thì chỉ xem đơn hàng của mình
             if (role == "Customer" && customerId != null)
             {
                 query = query.Where(d => d.MaKh == customerId);
@@ -34,40 +38,35 @@ namespace FastFood.Controllers
         // GET: DonHangs/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null) return NotFound();
+            if (id == null) return RedirectToAction(nameof(Index));
 
             var donHang = await _context.DonHangs
                 .Include(d => d.MaKhNavigation)
                 .FirstOrDefaultAsync(m => m.MaDh == id);
 
-            if (donHang == null) return NotFound();
+            if (donHang == null) return RedirectToAction(nameof(Index));
 
-            // Nếu khách -> chặn xem đơn của người khác
-            var role = HttpContext.Session.GetString("Role");
-            var customerId = HttpContext.Session.GetInt32("CustomerId");
-
+            // Khách không được xem đơn người khác
+            var role = GetRole();
+            var customerId = GetCustomerId();
             if (role == "Customer" && donHang.MaKh != customerId)
             {
-                return Unauthorized(); // cấm truy cập
+                return RedirectToAction(nameof(Index));
             }
 
             return View(donHang);
         }
 
-        // GET: DonHangs/Edit/5 (chỉ Admin mới được sửa)
+        // GET: DonHangs/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            var role = HttpContext.Session.GetString("Role");
-            if (role != "Admin")
-            {
-                return Unauthorized();
-            }
-
-            if (id == null) return NotFound();
+            if (GetRole() != "Admin") return Unauthorized();
+            if (id == null) return RedirectToAction(nameof(Index));
 
             var donHang = await _context.DonHangs.FindAsync(id);
-            if (donHang == null) return NotFound();
+            if (donHang == null) return RedirectToAction(nameof(Index));
 
+            ViewData["MaKh"] = new SelectList(_context.KhachHangs, "MaKh", "HoTen", donHang.MaKh);
             return View(donHang);
         }
 
@@ -76,13 +75,8 @@ namespace FastFood.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, DonHang donHang)
         {
-            var role = HttpContext.Session.GetString("Role");
-            if (role != "Admin")
-            {
-                return Unauthorized();
-            }
-
-            if (id != donHang.MaDh) return NotFound();
+            if (GetRole() != "Admin") return Unauthorized();
+            if (id != donHang.MaDh) return RedirectToAction(nameof(Index));
 
             if (ModelState.IsValid)
             {
@@ -94,31 +88,28 @@ namespace FastFood.Controllers
                 catch (DbUpdateConcurrencyException)
                 {
                     if (!_context.DonHangs.Any(e => e.MaDh == donHang.MaDh))
-                        return NotFound();
+                        return RedirectToAction(nameof(Index));
                     else
                         throw;
                 }
                 return RedirectToAction(nameof(Index));
             }
+
+            ViewData["MaKh"] = new SelectList(_context.KhachHangs, "MaKh", "HoTen", donHang.MaKh);
             return View(donHang);
         }
 
-        // GET: DonHangs/Delete/5 (Admin mới được xóa)
+        // GET: DonHangs/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            var role = HttpContext.Session.GetString("Role");
-            if (role != "Admin")
-            {
-                return Unauthorized();
-            }
-
-            if (id == null) return NotFound();
+            if (GetRole() != "Admin") return Unauthorized();
+            if (id == null) return RedirectToAction(nameof(Index));
 
             var donHang = await _context.DonHangs
                 .Include(d => d.MaKhNavigation)
                 .FirstOrDefaultAsync(m => m.MaDh == id);
 
-            if (donHang == null) return NotFound();
+            if (donHang == null) return RedirectToAction(nameof(Index));
 
             return View(donHang);
         }
@@ -128,16 +119,18 @@ namespace FastFood.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var role = HttpContext.Session.GetString("Role");
-            if (role != "Admin")
-            {
-                return Unauthorized();
-            }
+            if (GetRole() != "Admin") return Unauthorized();
 
             var donHang = await _context.DonHangs.FindAsync(id);
             if (donHang != null)
             {
+                // Xóa chi tiết đơn hàng liên quan trước khi xóa đơn hàng
+                var chiTietDonHangs = _context.ChiTietDonHangs.Where(ct => ct.MaDh == id);
+                _context.ChiTietDonHangs.RemoveRange(chiTietDonHangs);
+
+                // Xóa đơn hàng
                 _context.DonHangs.Remove(donHang);
+
                 await _context.SaveChangesAsync();
             }
 

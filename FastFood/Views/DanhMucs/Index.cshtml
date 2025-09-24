@@ -1,10 +1,10 @@
 ﻿@model IEnumerable<FastFood.Models.DanhMuc>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Danh mục sản phẩm";
 }
 
-<h1>Index</h1>
+<h1 class="page-title">📂 Danh mục sản phẩm</h1>
 
 <!-- 🔙 Nút quay lại Dashboard -->
 <a asp-controller="Admin" asp-action="Dashboard" class="btn btn-outline-secondary mb-3">
@@ -12,29 +12,31 @@
 </a>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create" class="btn btn-success">+ Thêm danh mục mới</a>
 </p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.TenDm)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.TenDm)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.MaDm">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.MaDm">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.MaDm">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+
+<div class="table-responsive">
+    <table class="table table-hover shadow-sm rounded">
+        <thead class="table-dark">
+            <tr>
+                <th class="text-center">Tên danh mục</th>
+                <th class="text-center">Hành động</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td class="align-middle">@item.TenDm</td>
+                    <td class="text-center align-middle">
+                        <a asp-action="Edit" asp-route-id="@item.MaDm" class="btn btn-sm btn-primary">✏ Sửa</a>
+                        <a asp-action="Details" asp-route-id="@item.MaDm" class="btn btn-sm btn-info text-white">🔍 Xem</a>
+                        <a asp-action="Delete" asp-route-id="@item.MaDm" class="btn btn-sm btn-danger">🗑 Xóa</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+

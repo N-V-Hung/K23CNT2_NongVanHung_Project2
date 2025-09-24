@@ -1,48 +1,33 @@
 ﻿@model FastFood.Models.DonHang
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Chi tiết đơn hàng";
 }
 
-<h1>Details</h1>
+<h1 class="page-title">📋 Chi tiết đơn hàng</h1>
 
-<div>
-    <h4>DonHang</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.NgayDat)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.NgayDat)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.TrangThai)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.TrangThai)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.PhuongThucTt)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.PhuongThucTt)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.TongTien)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.TongTien)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.MaKhNavigation)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.MaKhNavigation.MaKh)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.MaDh">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+<div class="card custom-card shadow-sm">
+    <div class="card-body">
+        <dl class="row details-list">
+            <dt class="col-sm-3 fw-bold">📅 Ngày đặt</dt>
+            <dd class="col-sm-9">@Html.DisplayFor(model => model.NgayDat)</dd>
+
+            <dt class="col-sm-3 fw-bold">📌 Trạng thái</dt>
+            <dd class="col-sm-9">@Html.DisplayFor(model => model.TrangThai)</dd>
+
+            <dt class="col-sm-3 fw-bold">💳 Thanh toán</dt>
+            <dd class="col-sm-9">@Html.DisplayFor(model => model.PhuongThucTt)</dd>
+
+            <dt class="col-sm-3 fw-bold">💰 Tổng tiền</dt>
+            <dd class="col-sm-9">@Model.TongTien.ToString("N0") ₫</dd>
+
+            <dt class="col-sm-3 fw-bold">👤 Mã khách hàng</dt>
+            <dd class="col-sm-9">@Html.DisplayFor(model => model.MaKhNavigation.MaKh)</dd>
+        </dl>
+
+        <div class="d-flex justify-content-between mt-4">
+            <a asp-action="Index" class="btn btn-outline-secondary btn-back">⬅ Quay lại</a>
+            <a asp-action="Edit" asp-route-id="@Model?.MaDh" class="btn btn-primary btn-edit">✏ Sửa</a>
+        </div>
+    </div>
 </div>

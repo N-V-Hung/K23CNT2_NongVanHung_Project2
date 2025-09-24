@@ -1,24 +1,26 @@
 ﻿@model FastFood.Models.DanhMuc
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Chi tiết danh mục";
 }
 
-<h1>Details</h1>
+<h1 class="page-title">📂 Chi tiết danh mục</h1>
+<hr />
 
-<div>
-    <h4>DanhMuc</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.TenDm)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.TenDm)
-        </dd>
-    </dl>
+<div class="card shadow-sm border-0">
+    <div class="card-body">
+        <dl class="row">
+            <dt class="col-sm-3">Tên danh mục</dt>
+            <dd class="col-sm-9">@Model.TenDm</dd>
+        </dl>
+
+        <div class="mt-4">
+            <a asp-action="Edit" asp-route-id="@Model?.MaDm" class="btn btn-primary">✏ Sửa</a>
+            <a asp-action="Index" class="btn btn-secondary">⬅ Quay lại</a>
+        </div>
+    </div>
 </div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.MaDm">Edit</a> |
-    <a asp-action="Index">Back to List</a>
-</div>
+
+<style>
+    
+</style>

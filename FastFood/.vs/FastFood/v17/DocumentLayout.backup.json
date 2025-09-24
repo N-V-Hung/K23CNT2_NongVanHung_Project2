@@ -3,72 +3,60 @@
   "WorkspaceRootPath": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2EBDE9E6-11F7-470F-A42A-B73F7C9077A4}|FastFood.csproj|d:\\dev\\k23cnt2_prj2\\k23cnt2_nongvanhung_project2\\fastfood\\views\\giohangs\\thanhtoan.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2EBDE9E6-11F7-470F-A42A-B73F7C9077A4}|FastFood.csproj|solutionrelative:views\\giohangs\\thanhtoan.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2EBDE9E6-11F7-470F-A42A-B73F7C9077A4}|FastFood.csproj|d:\\dev\\k23cnt2_prj2\\k23cnt2_nongvanhung_project2\\fastfood\\controllers\\giohangscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2EBDE9E6-11F7-470F-A42A-B73F7C9077A4}|FastFood.csproj|solutionrelative:controllers\\giohangscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2EBDE9E6-11F7-470F-A42A-B73F7C9077A4}|FastFood.csproj|d:\\dev\\k23cnt2_prj2\\k23cnt2_nongvanhung_project2\\fastfood\\views\\giohangs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2EBDE9E6-11F7-470F-A42A-B73F7C9077A4}|FastFood.csproj|solutionrelative:views\\giohangs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{2EBDE9E6-11F7-470F-A42A-B73F7C9077A4}|FastFood.csproj|d:\\dev\\k23cnt2_prj2\\k23cnt2_nongvanhung_project2\\fastfood\\controllers\\donhangscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EBDE9E6-11F7-470F-A42A-B73F7C9077A4}|FastFood.csproj|solutionrelative:controllers\\donhangscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2EBDE9E6-11F7-470F-A42A-B73F7C9077A4}|FastFood.csproj|d:\\dev\\k23cnt2_prj2\\k23cnt2_nongvanhung_project2\\fastfood\\views\\home\\tatcasanpham.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2EBDE9E6-11F7-470F-A42A-B73F7C9077A4}|FastFood.csproj|solutionrelative:views\\home\\tatcasanpham.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{2EBDE9E6-11F7-470F-A42A-B73F7C9077A4}|FastFood.csproj|d:\\dev\\k23cnt2_prj2\\k23cnt2_nongvanhung_project2\\fastfood\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{2EBDE9E6-11F7-470F-A42A-B73F7C9077A4}|FastFood.csproj|solutionrelative:wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2EBDE9E6-11F7-470F-A42A-B73F7C9077A4}|FastFood.csproj|d:\\dev\\k23cnt2_prj2\\k23cnt2_nongvanhung_project2\\fastfood\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2EBDE9E6-11F7-470F-A42A-B73F7C9077A4}|FastFood.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{2EBDE9E6-11F7-470F-A42A-B73F7C9077A4}|FastFood.csproj|d:\\dev\\k23cnt2_prj2\\k23cnt2_nongvanhung_project2\\fastfood\\models\\qlbandoancontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EBDE9E6-11F7-470F-A42A-B73F7C9077A4}|FastFood.csproj|solutionrelative:models\\qlbandoancontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2EBDE9E6-11F7-470F-A42A-B73F7C9077A4}|FastFood.csproj|d:\\dev\\k23cnt2_prj2\\k23cnt2_nongvanhung_project2\\fastfood\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{2EBDE9E6-11F7-470F-A42A-B73F7C9077A4}|FastFood.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{2EBDE9E6-11F7-470F-A42A-B73F7C9077A4}|FastFood.csproj|d:\\dev\\k23cnt2_prj2\\k23cnt2_nongvanhung_project2\\fastfood\\models\\chitietdonhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EBDE9E6-11F7-470F-A42A-B73F7C9077A4}|FastFood.csproj|solutionrelative:models\\chitietdonhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2EBDE9E6-11F7-470F-A42A-B73F7C9077A4}|FastFood.csproj|d:\\dev\\k23cnt2_prj2\\k23cnt2_nongvanhung_project2\\fastfood\\views\\home\\search.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2EBDE9E6-11F7-470F-A42A-B73F7C9077A4}|FastFood.csproj|solutionrelative:views\\home\\search.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{2EBDE9E6-11F7-470F-A42A-B73F7C9077A4}|FastFood.csproj|d:\\dev\\k23cnt2_prj2\\k23cnt2_nongvanhung_project2\\fastfood\\models\\giohang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EBDE9E6-11F7-470F-A42A-B73F7C9077A4}|FastFood.csproj|solutionrelative:models\\giohang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2EBDE9E6-11F7-470F-A42A-B73F7C9077A4}|FastFood.csproj|d:\\dev\\k23cnt2_prj2\\k23cnt2_nongvanhung_project2\\fastfood\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2EBDE9E6-11F7-470F-A42A-B73F7C9077A4}|FastFood.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2EBDE9E6-11F7-470F-A42A-B73F7C9077A4}|FastFood.csproj|d:\\dev\\k23cnt2_prj2\\k23cnt2_nongvanhung_project2\\fastfood\\models\\donhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EBDE9E6-11F7-470F-A42A-B73F7C9077A4}|FastFood.csproj|solutionrelative:models\\donhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2EBDE9E6-11F7-470F-A42A-B73F7C9077A4}|FastFood.csproj|d:\\dev\\k23cnt2_prj2\\k23cnt2_nongvanhung_project2\\fastfood\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2EBDE9E6-11F7-470F-A42A-B73F7C9077A4}|FastFood.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2EBDE9E6-11F7-470F-A42A-B73F7C9077A4}|FastFood.csproj|d:\\dev\\k23cnt2_prj2\\k23cnt2_nongvanhung_project2\\fastfood\\views\\shared\\_navbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2EBDE9E6-11F7-470F-A42A-B73F7C9077A4}|FastFood.csproj|solutionrelative:views\\shared\\_navbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{2EBDE9E6-11F7-470F-A42A-B73F7C9077A4}|FastFood.csproj|d:\\dev\\k23cnt2_prj2\\k23cnt2_nongvanhung_project2\\fastfood\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EBDE9E6-11F7-470F-A42A-B73F7C9077A4}|FastFood.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2EBDE9E6-11F7-470F-A42A-B73F7C9077A4}|FastFood.csproj|d:\\dev\\k23cnt2_prj2\\k23cnt2_nongvanhung_project2\\fastfood\\views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2EBDE9E6-11F7-470F-A42A-B73F7C9077A4}|FastFood.csproj|solutionrelative:views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{2EBDE9E6-11F7-470F-A42A-B73F7C9077A4}|FastFood.csproj|d:\\dev\\k23cnt2_prj2\\k23cnt2_nongvanhung_project2\\fastfood\\views\\giohangs\\xacnhandonhang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2EBDE9E6-11F7-470F-A42A-B73F7C9077A4}|FastFood.csproj|solutionrelative:views\\giohangs\\xacnhandonhang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2EBDE9E6-11F7-470F-A42A-B73F7C9077A4}|FastFood.csproj|d:\\dev\\k23cnt2_prj2\\k23cnt2_nongvanhung_project2\\fastfood\\views\\sanphams\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2EBDE9E6-11F7-470F-A42A-B73F7C9077A4}|FastFood.csproj|solutionrelative:views\\sanphams\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{2EBDE9E6-11F7-470F-A42A-B73F7C9077A4}|FastFood.csproj|d:\\dev\\k23cnt2_prj2\\k23cnt2_nongvanhung_project2\\fastfood\\views\\giohangs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2EBDE9E6-11F7-470F-A42A-B73F7C9077A4}|FastFood.csproj|solutionrelative:views\\giohangs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2EBDE9E6-11F7-470F-A42A-B73F7C9077A4}|FastFood.csproj|d:\\dev\\k23cnt2_prj2\\k23cnt2_nongvanhung_project2\\fastfood\\views\\nhanviens\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2EBDE9E6-11F7-470F-A42A-B73F7C9077A4}|FastFood.csproj|solutionrelative:views\\nhanviens\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{2EBDE9E6-11F7-470F-A42A-B73F7C9077A4}|FastFood.csproj|d:\\dev\\k23cnt2_prj2\\k23cnt2_nongvanhung_project2\\fastfood\\models\\sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EBDE9E6-11F7-470F-A42A-B73F7C9077A4}|FastFood.csproj|solutionrelative:models\\sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2EBDE9E6-11F7-470F-A42A-B73F7C9077A4}|FastFood.csproj|d:\\dev\\k23cnt2_prj2\\k23cnt2_nongvanhung_project2\\fastfood\\views\\khachhangs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2EBDE9E6-11F7-470F-A42A-B73F7C9077A4}|FastFood.csproj|solutionrelative:views\\khachhangs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2EBDE9E6-11F7-470F-A42A-B73F7C9077A4}|FastFood.csproj|d:\\dev\\k23cnt2_prj2\\k23cnt2_nongvanhung_project2\\fastfood\\views\\danhmucs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2EBDE9E6-11F7-470F-A42A-B73F7C9077A4}|FastFood.csproj|solutionrelative:views\\danhmucs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2EBDE9E6-11F7-470F-A42A-B73F7C9077A4}|FastFood.csproj|d:\\dev\\k23cnt2_prj2\\k23cnt2_nongvanhung_project2\\fastfood\\views\\donhangs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2EBDE9E6-11F7-470F-A42A-B73F7C9077A4}|FastFood.csproj|solutionrelative:views\\donhangs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2EBDE9E6-11F7-470F-A42A-B73F7C9077A4}|FastFood.csproj|d:\\dev\\k23cnt2_prj2\\k23cnt2_nongvanhung_project2\\fastfood\\controllers\\danhmucscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2EBDE9E6-11F7-470F-A42A-B73F7C9077A4}|FastFood.csproj|solutionrelative:controllers\\danhmucscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2EBDE9E6-11F7-470F-A42A-B73F7C9077A4}|FastFood.csproj|d:\\dev\\k23cnt2_prj2\\k23cnt2_nongvanhung_project2\\fastfood\\controllers\\nhanvienscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2EBDE9E6-11F7-470F-A42A-B73F7C9077A4}|FastFood.csproj|solutionrelative:controllers\\nhanvienscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2EBDE9E6-11F7-470F-A42A-B73F7C9077A4}|FastFood.csproj|d:\\dev\\k23cnt2_prj2\\k23cnt2_nongvanhung_project2\\fastfood\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2EBDE9E6-11F7-470F-A42A-B73F7C9077A4}|FastFood.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -78,220 +66,188 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GioHangsController.cs",
-              "DocumentMoniker": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\Controllers\\GioHangsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\GioHangsController.cs",
-              "ToolTip": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\Controllers\\GioHangsController.cs",
-              "RelativeToolTip": "Controllers\\GioHangsController.cs",
-              "ViewState": "AgIAAFgAAAAAAAAAAADwv2IAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T14:08:19.331Z",
+              "DocumentIndex": 3,
+              "Title": "site.js",
+              "DocumentMoniker": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\site.js",
+              "ToolTip": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "wwwroot\\js\\site.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-09-24T20:45:36.207Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\Views\\GioHangs\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\GioHangs\\Index.cshtml",
-              "ToolTip": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\Views\\GioHangs\\Index.cshtml",
-              "RelativeToolTip": "Views\\GioHangs\\Index.cshtml",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAswEQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-23T14:06:33.683Z"
+              "DocumentIndex": 5,
+              "Title": "ChiTietDonHang.cs",
+              "DocumentMoniker": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\Models\\ChiTietDonHang.cs",
+              "RelativeDocumentMoniker": "Models\\ChiTietDonHang.cs",
+              "ToolTip": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\Models\\ChiTietDonHang.cs",
+              "RelativeToolTip": "Models\\ChiTietDonHang.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAzwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T20:35:45.861Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Search.cshtml",
-              "DocumentMoniker": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\Views\\Home\\Search.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Search.cshtml",
-              "ToolTip": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\Views\\Home\\Search.cshtml",
-              "RelativeToolTip": "Views\\Home\\Search.cshtml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAswCsAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "ThanhToan.cshtml",
+              "DocumentMoniker": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\Views\\GioHangs\\ThanhToan.cshtml",
+              "RelativeDocumentMoniker": "Views\\GioHangs\\ThanhToan.cshtml",
+              "ToolTip": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\Views\\GioHangs\\ThanhToan.cshtml",
+              "RelativeToolTip": "Views\\GioHangs\\ThanhToan.cshtml",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAqwCEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-23T13:45:15.123Z"
+              "WhenOpened": "2025-09-24T20:23:12.16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GioHang.cs",
+              "DocumentMoniker": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\Models\\GioHang.cs",
+              "RelativeDocumentMoniker": "Models\\GioHang.cs",
+              "ToolTip": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\Models\\GioHang.cs",
+              "RelativeToolTip": "Models\\GioHang.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T20:10:17.654Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "DonHang.cs",
+              "DocumentMoniker": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\Models\\DonHang.cs",
+              "RelativeDocumentMoniker": "Models\\DonHang.cs",
+              "ToolTip": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\Models\\DonHang.cs",
+              "RelativeToolTip": "Models\\DonHang.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAUwA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T20:07:14.693Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DonHangsController.cs",
+              "DocumentMoniker": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\Controllers\\DonHangsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DonHangsController.cs",
+              "ToolTip": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\Controllers\\DonHangsController.cs",
+              "RelativeToolTip": "Controllers\\DonHangsController.cs",
+              "ViewState": "AgIAAH8AAAAAAAAAAAAgwIwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T20:05:39.142Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
               "ToolTip": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAswEQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-23T13:39:18.511Z"
+              "WhenOpened": "2025-09-24T19:58:01.47Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "site.css",
-              "DocumentMoniker": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
-              "ToolTip": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "wwwroot\\css\\site.css",
-              "ViewState": "AgIAAGsAAAAAAAAAAAAswJUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-09-23T13:25:44.377Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAABwAAAAAAAAAAAAswDIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-23T13:22:36.065Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TatCaSanPham.cshtml",
-              "DocumentMoniker": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\Views\\Home\\TatCaSanPham.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\TatCaSanPham.cshtml",
-              "ToolTip": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\Views\\Home\\TatCaSanPham.cshtml",
-              "RelativeToolTip": "Views\\Home\\TatCaSanPham.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAwwBsAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-23T13:17:15.334Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "HomeController.cs",
               "DocumentMoniker": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
               "ToolTip": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAmwEIAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAzwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T13:15:52.314Z"
+              "WhenOpened": "2025-09-24T19:57:56.118Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\Views\\SanPhams\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\SanPhams\\Index.cshtml",
-              "ToolTip": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\Views\\SanPhams\\Index.cshtml",
-              "RelativeToolTip": "Views\\SanPhams\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Title": "XacNhanDonHang.cshtml",
+              "DocumentMoniker": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\Views\\GioHangs\\XacNhanDonHang.cshtml",
+              "RelativeDocumentMoniker": "Views\\GioHangs\\XacNhanDonHang.cshtml",
+              "ToolTip": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\Views\\GioHangs\\XacNhanDonHang.cshtml",
+              "RelativeToolTip": "Views\\GioHangs\\XacNhanDonHang.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-23T13:11:04.728Z"
+              "WhenOpened": "2025-09-24T19:56:07.759Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\Views\\NhanViens\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\NhanViens\\Index.cshtml",
-              "ToolTip": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\Views\\NhanViens\\Index.cshtml",
-              "RelativeToolTip": "Views\\NhanViens\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAEAAAAAAAAAA==",
+              "DocumentMoniker": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\Views\\GioHangs\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\GioHangs\\Index.cshtml",
+              "ToolTip": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\Views\\GioHangs\\Index.cshtml",
+              "RelativeToolTip": "Views\\GioHangs\\Index.cshtml",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAEMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-23T13:10:47.518Z"
+              "WhenOpened": "2025-09-24T19:54:30.815Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\Views\\KhachHangs\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\KhachHangs\\Index.cshtml",
-              "ToolTip": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\Views\\KhachHangs\\Index.cshtml",
-              "RelativeToolTip": "Views\\KhachHangs\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-23T13:10:39.412Z"
+              "Title": "SanPham.cs",
+              "DocumentMoniker": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\Models\\SanPham.cs",
+              "RelativeDocumentMoniker": "Models\\SanPham.cs",
+              "ToolTip": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\Models\\SanPham.cs",
+              "RelativeToolTip": "Models\\SanPham.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T19:42:17.975Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\Views\\DonHangs\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\DonHangs\\Index.cshtml",
-              "ToolTip": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\Views\\DonHangs\\Index.cshtml",
-              "RelativeToolTip": "Views\\DonHangs\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-23T13:10:11.719Z"
+              "DocumentIndex": 1,
+              "Title": "GioHangsController.cs",
+              "DocumentMoniker": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\Controllers\\GioHangsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\GioHangsController.cs",
+              "ToolTip": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\Controllers\\GioHangsController.cs",
+              "RelativeToolTip": "Controllers\\GioHangsController.cs",
+              "ViewState": "AgIAAL0AAAAAAAAAAAAYwNUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T19:28:59.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "QlbanDoAnContext.cs",
+              "DocumentMoniker": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\Models\\QlbanDoAnContext.cs",
+              "RelativeDocumentMoniker": "Models\\QlbanDoAnContext.cs",
+              "ToolTip": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\Models\\QlbanDoAnContext.cs",
+              "RelativeToolTip": "Models\\QlbanDoAnContext.cs",
+              "ViewState": "AgIAAI8AAAAAAAAAAAAYwJYAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T17:53:56.812Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\Views\\DanhMucs\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\DanhMucs\\Index.cshtml",
-              "ToolTip": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\Views\\DanhMucs\\Index.cshtml",
-              "RelativeToolTip": "Views\\DanhMucs\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAEAAAAAAAAAA==",
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-23T13:10:03.386Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "DanhMucsController.cs",
-              "DocumentMoniker": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\Controllers\\DanhMucsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\DanhMucsController.cs",
-              "ToolTip": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\Controllers\\DanhMucsController.cs",
-              "RelativeToolTip": "Controllers\\DanhMucsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T13:05:54.538Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "NhanViensController.cs",
-              "DocumentMoniker": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\Controllers\\NhanViensController.cs",
-              "RelativeDocumentMoniker": "Controllers\\NhanViensController.cs",
-              "ToolTip": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\Controllers\\NhanViensController.cs",
-              "RelativeToolTip": "Controllers\\NhanViensController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T13:05:17.993Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Dashboard.cshtml",
-              "DocumentMoniker": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\Views\\Admin\\Dashboard.cshtml",
-              "RelativeDocumentMoniker": "Views\\Admin\\Dashboard.cshtml",
-              "ToolTip": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\Views\\Admin\\Dashboard.cshtml",
-              "RelativeToolTip": "Views\\Admin\\Dashboard.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAswB8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-23T12:57:52.571Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "_NavBar.cshtml",
-              "DocumentMoniker": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\Views\\Shared\\_NavBar.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_NavBar.cshtml",
-              "ToolTip": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\Views\\Shared\\_NavBar.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_NavBar.cshtml",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAABUAAABhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-23T12:57:32.108Z"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "WhenOpened": "2025-09-24T17:49:11.694Z"
             }
           ]
         }

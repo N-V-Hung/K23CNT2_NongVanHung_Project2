@@ -1,33 +1,38 @@
 ﻿@model FastFood.Models.DanhMuc
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Thêm danh mục mới";
 }
 
-<h1>Create</h1>
-
-<h4>DanhMuc</h4>
+<h1 class="page-title">➕ Thêm danh mục mới</h1>
 <hr />
+
 <div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="TenDm" class="control-label"></label>
-                <input asp-for="TenDm" class="form-control" />
-                <span asp-validation-for="TenDm" class="text-danger"></span>
+    <div class="col-md-6">
+        <div class="card shadow-sm border-0">
+            <div class="card-body">
+                <form asp-action="Create">
+                    <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                    <div class="form-group mb-3">
+                        <label asp-for="TenDm" class="form-label">Tên danh mục</label>
+                        <input asp-for="TenDm" class="form-control" placeholder="Nhập tên danh mục..." />
+                        <span asp-validation-for="TenDm" class="text-danger"></span>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <a asp-action="Index" class="btn btn-secondary">⬅ Quay lại</a>
+                        <button type="submit" class="btn btn-success">💾 Lưu</button>
+                    </div>
+                </form>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
+        </div>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

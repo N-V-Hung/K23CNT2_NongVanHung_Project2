@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "Xác nhận đơn hàng";
+}
+
+<h2>@ViewBag.Message</h2>
+
+@if (ViewBag.TongTien != null)
+{
+    <p><strong>Tổng tiền:</strong> @String.Format("{0:C}", ViewBag.TongTien)</p>
+}
+
+@if (!string.IsNullOrEmpty(ViewBag.PhuongThucThanhToan))
+{
+    <p><strong>Phương thức thanh toán:</strong> @ViewBag.PhuongThucThanhToan</p>
+}
+
+<a asp-action="Index" class="btn btn-primary">Quay lại cửa hàng</a>

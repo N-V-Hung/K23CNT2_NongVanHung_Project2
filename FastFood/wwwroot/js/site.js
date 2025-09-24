@@ -1,4 +1,16 @@
-﻿// Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".togglePasswordBtn").forEach(btn => {
+        btn.addEventListener("click", function () {
+            const inputId = this.getAttribute("data-target");
+            const input = document.getElementById(inputId);
 
-// Write your JavaScript code.
+            if (input.type === "password") {
+                input.type = "text";
+                this.textContent = "🙈 Ẩn";
+            } else {
+                input.type = "password";
+                this.textContent = "👁 Xem";
+            }
+        });
+    });
+});

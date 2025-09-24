@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Thanh Toán";
+}
+
+<h2>Thanh Toán</h2>
+
+<div class="card p-4" style="max-width: 500px; margin: auto;">
+    <form asp-action="ThanhToan" method="post">
+        <div class="mb-3">
+            <label for="phuongThucThanhToan" class="form-label">Chọn phương thức thanh toán</label>
+            <select class="form-select" id="phuongThucThanhToan" name="phuongThucThanhToan" required>
+                <option value="" disabled selected>-- Chọn phương thức --</option>
+                <option value="TienMat">Tiền mặt</option>
+                <option value="ChuyenKhoan">Chuyển khoản</option>
+                <option value="GiaDienTu">Ví điện tử</option>
+            </select>
+        </div>
+
+        @if (!ViewData.ModelState.IsValid)
+        {
+            <div class="text-danger mb-3">
+                @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                {
+                    <p>@error.ErrorMessage</p>
+                }
+            </div>
+        }
+
+        <button type="submit" class="btn btn-success w-100">
+            Xác nhận thanh toán
+        </button>
+    </form>
+</div>

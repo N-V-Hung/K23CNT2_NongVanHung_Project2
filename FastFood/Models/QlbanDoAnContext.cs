@@ -16,17 +16,11 @@ public partial class QlbanDoAnContext : DbContext
     }
 
     public virtual DbSet<ChiTietDonHang> ChiTietDonHangs { get; set; }
-
     public virtual DbSet<DanhMuc> DanhMucs { get; set; }
-
     public virtual DbSet<DonHang> DonHangs { get; set; }
-
     public virtual DbSet<GioHang> GioHangs { get; set; }
-
     public virtual DbSet<KhachHang> KhachHangs { get; set; }
-
     public virtual DbSet<NhanVien> NhanViens { get; set; }
-
     public virtual DbSet<SanPham> SanPhams { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -47,7 +41,7 @@ public partial class QlbanDoAnContext : DbContext
 
             entity.HasOne(d => d.MaDhNavigation).WithMany(p => p.ChiTietDonHangs)
                 .HasForeignKey(d => d.MaDh)
-                .OnDelete(DeleteBehavior.ClientSetNull)
+                .OnDelete(DeleteBehavior.Cascade)   // <-- Đã chỉnh sửa để Cascade Delete
                 .HasConstraintName("FK__ChiTietDon__MaDH__5CD6CB2B");
 
             entity.HasOne(d => d.MaSpNavigation).WithMany(p => p.ChiTietDonHangs)
@@ -100,8 +94,10 @@ public partial class QlbanDoAnContext : DbContext
             entity.Property(e => e.MaKh).HasColumnName("MaKH");
             entity.Property(e => e.MaSp).HasColumnName("MaSP");
 
+            // ✅ Thêm Cascade Delete cho quan hệ KhachHang - GioHang
             entity.HasOne(d => d.MaKhNavigation).WithMany(p => p.GioHangs)
                 .HasForeignKey(d => d.MaKh)
+                .OnDelete(DeleteBehavior.Cascade)
                 .HasConstraintName("FK__GioHang__MaKH__52593CB8");
 
             entity.HasOne(d => d.MaSpNavigation).WithMany(p => p.GioHangs)

@@ -7,12 +7,16 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/FastFood.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/custom.css" />
+    <script src="~/js/site.js"></script>
+
 </head>
 <body>
     <div class="d-flex flex-column min-vh-100">
         <!-- Header -->
         <header>
             <partial name="_NavBar" />
+
         </header>
 
         <!-- Nội dung chính -->
@@ -47,6 +51,7 @@
             </div>
         </footer>
     </div>
+    @RenderSection("Scripts", required: false)
 </body>
 
 </html>

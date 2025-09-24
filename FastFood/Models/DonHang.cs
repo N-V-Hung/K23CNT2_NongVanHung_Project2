@@ -17,6 +17,9 @@ public partial class DonHang
 
     public int? MaKh { get; set; }
 
+    
+    
+
     public virtual ICollection<ChiTietDonHang> ChiTietDonHangs { get; set; } = new List<ChiTietDonHang>();
 
     public virtual KhachHang? MaKhNavigation { get; set; }

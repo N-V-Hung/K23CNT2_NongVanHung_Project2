@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "pVzOC1eJhDpKZp45mxgx2qMlKpFSTDoKs0re+c2BXNs=",
+  "Hash": "89Atm2ErnFLv3v0qtvbugPtAIZ/VKALvAfH3GOBF0HI=",
   "Source": "FastFood",
   "BasePath": "_content/FastFood",
   "Mode": "Default",
@@ -55,6 +55,25 @@
       "OriginalItemSpec": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\FastFood.bundle.scp.css"
     },
     {
+      "Identity": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\wwwroot\\css\\custom.css",
+      "SourceId": "FastFood",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\wwwroot\\",
+      "BasePath": "_content/FastFood",
+      "RelativePath": "css/custom.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\custom.css"
+    },
+    {
       "Identity": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\wwwroot\\css\\site.css",
       "SourceId": "FastFood",
       "SourceType": "Discovered",
@@ -93,12 +112,12 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\wwwroot\\image\\banner.jpg",
+      "Identity": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\wwwroot\\images\\banner.jpg",
       "SourceId": "FastFood",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\wwwroot\\",
       "BasePath": "_content/FastFood",
-      "RelativePath": "image/banner.jpg",
+      "RelativePath": "images/banner.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -109,15 +128,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\image\\banner.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\banner.jpg"
     },
     {
-      "Identity": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\wwwroot\\image\\coca.jpg",
+      "Identity": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\wwwroot\\images\\coca.jpg",
       "SourceId": "FastFood",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\wwwroot\\",
       "BasePath": "_content/FastFood",
-      "RelativePath": "image/coca.jpg",
+      "RelativePath": "images/coca.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -128,15 +147,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\image\\coca.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\coca.jpg"
     },
     {
-      "Identity": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\wwwroot\\image\\flan.jpg",
+      "Identity": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\wwwroot\\images\\flan.jpg",
       "SourceId": "FastFood",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\wwwroot\\",
       "BasePath": "_content/FastFood",
-      "RelativePath": "image/flan.jpg",
+      "RelativePath": "images/flan.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -147,15 +166,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\image\\flan.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\flan.jpg"
     },
     {
-      "Identity": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\wwwroot\\image\\hamburger.jpg",
+      "Identity": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\wwwroot\\images\\hamburger.jpg",
       "SourceId": "FastFood",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\wwwroot\\",
       "BasePath": "_content/FastFood",
-      "RelativePath": "image/hamburger.jpg",
+      "RelativePath": "images/hamburger.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -166,15 +185,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\image\\hamburger.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\hamburger.jpg"
     },
     {
-      "Identity": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\wwwroot\\image\\pizza.jpg",
+      "Identity": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\wwwroot\\images\\pizza.jpg",
       "SourceId": "FastFood",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\wwwroot\\",
       "BasePath": "_content/FastFood",
-      "RelativePath": "image/pizza.jpg",
+      "RelativePath": "images/pizza.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -185,15 +204,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\image\\pizza.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\pizza.jpg"
     },
     {
-      "Identity": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\wwwroot\\image\\trasua.jpg",
+      "Identity": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\wwwroot\\images\\trasua.jpg",
       "SourceId": "FastFood",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\wwwroot\\",
       "BasePath": "_content/FastFood",
-      "RelativePath": "image/trasua.jpg",
+      "RelativePath": "images/trasua.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -204,7 +223,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\image\\trasua.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\trasua.jpg"
     },
     {
       "Identity": "D:\\dev\\K23CNT2_PRJ2\\K23CNT2_NongVanHung_Project2\\FastFood\\wwwroot\\js\\site.js",

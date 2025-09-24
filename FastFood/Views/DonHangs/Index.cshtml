@@ -10,6 +10,14 @@
     ⬅ Quay lại Dashboard
 </a>
 
+<!-- 👉 Chỉ Admin mới thấy nút tạo đơn hàng -->
+@if (HttpContextAccessor.HttpContext.Session.GetString("Role") == "Admin")
+{
+    <p>
+        <a asp-action="Create" class="btn btn-success">+ Tạo đơn hàng mới</a>
+    </p>
+}
+
 <table class="table table-bordered">
     <thead class="table-light">
         <tr>
