@@ -75,10 +75,11 @@
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.5px;
+    background-color: #1e3a8a;
 }
 
     .navbar .nav-link {
-        color: #fff !important;
+        color: #ff6600 !important;
         margin-right: 15px;
     }
 
@@ -102,3 +103,47 @@
     border: none;
     font-weight: bold;
 }
+/* Reset chiều cao để flex hoạt động */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main chiếm hết không gian còn lại */
+main {
+    flex: 1 0 auto;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(90deg, #ff5722, #ff7043);
+    color: white;
+    padding: 40px 0 20px;
+    margin-top: auto;
+}
+
+    footer h5 {
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    footer p {
+        margin: 5px 0;
+        font-size: 15px;
+    }
+
+    footer a {
+        color: white;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+        footer a:hover {
+            color: #ffd54f; /* vàng khi hover */
+        }
+
+    footer .social-icons i {
+        font-size: 20px;
+        margin-right: 15px;
+    }

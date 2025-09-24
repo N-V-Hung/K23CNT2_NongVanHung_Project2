@@ -9,7 +9,11 @@ public partial class GioHang
 
     public int? MaKh { get; set; }
 
-    public virtual ICollection<ChiTietGioHang> ChiTietGioHangs { get; set; } = new List<ChiTietGioHang>();
+    public int? MaSp { get; set; }
+
+    public int? SoLuong { get; set; }
 
     public virtual KhachHang? MaKhNavigation { get; set; }
+
+    public virtual SanPham? MaSpNavigation { get; set; }
 }

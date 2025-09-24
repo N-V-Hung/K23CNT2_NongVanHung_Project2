@@ -1,59 +1,45 @@
 ﻿@model IEnumerable<FastFood.Models.DonHang>
+@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
 
-@{
-    ViewData["Title"] = "Index";
-}
+<h2>📦 Danh sách đơn hàng</h2>
+<hr />
 
-<h1>Index</h1>
+<!-- 🔙 Nút quay lại Dashboard -->
+<a asp-controller="Admin" asp-action="Dashboard" class="btn btn-outline-secondary mb-3">
+    ⬅ Quay lại Dashboard
+</a>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
+<table class="table table-bordered">
+    <thead class="table-light">
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.NgayDat)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.TrangThai)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.PhuongThucTt)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.TongTien)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.MaKhNavigation)
-            </th>
+            <th>Mã đơn</th>
+            <th>Khách hàng</th>
+            <th>Ngày đặt</th>
+            <th>Tổng tiền</th>
+            <th>Trạng thái</th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.NgayDat)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TrangThai)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.PhuongThucTt)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TongTien)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MaKhNavigation.MaKh)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.MaDh">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.MaDh">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.MaDh">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var dh in Model)
+        {
+            <tr>
+                <td>@dh.MaDh</td>
+                <td>@dh.MaKhNavigation?.HoTen</td>
+                <td>@dh.NgayDat?.ToString("dd/MM/yyyy")</td>
+                <td>@($"{dh.TongTien:N0} đ")</td>
+                <td>@dh.TrangThai</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@dh.MaDh" class="btn btn-sm btn-info">Chi tiết</a>
+
+                    @if (HttpContextAccessor.HttpContext.Session.GetString("Role") == "Admin")
+                    {
+                        <a asp-action="Edit" asp-route-id="@dh.MaDh" class="btn btn-sm btn-warning">Sửa</a>
+                        <a asp-action="Delete" asp-route-id="@dh.MaDh" class="btn btn-sm btn-danger">Xóa</a>
+                    }
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

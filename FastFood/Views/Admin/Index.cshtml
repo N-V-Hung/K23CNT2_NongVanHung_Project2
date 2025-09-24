@@ -1,0 +1,8 @@
+﻿@inject IHttpContextAccessor HttpContextAccessor
+@{
+    ViewData["Title"] = "Trang quản trị";
+    var userName = HttpContextAccessor.HttpContext.Session.GetString("UserName");
+}
+
+<h2>Xin chào, @userName!</h2>
+<p>Bạn đang ở trong trang quản trị.</p>

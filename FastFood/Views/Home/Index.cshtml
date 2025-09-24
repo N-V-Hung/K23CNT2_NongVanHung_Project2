@@ -1,62 +1,68 @@
 ﻿@model IEnumerable<FastFood.Models.DanhMuc>
 
-<div class="banner">
-    <img src="~/image/banner.jpg" alt="Banner" />
+<div class="banner mb-4">
+    <img src="~/image/banner.jpg" alt="Banner" class="img-fluid w-100 rounded shadow" />
 </div>
 
-<h2>🍔 Trang chủ - Menu đồ ăn</h2>
+<h2 class="text-center mb-4">🍔 Trang chủ - Menu đồ ăn</h2>
 
-<div class="box-30">
-
-    <div class="input-group mt-3" style="max-width:500px; width:100%; margin:auto;">
-
-        <input type="search" class="form-control ps-4" placeholder="Enter to search..." />
-
+<!-- Thanh tìm kiếm -->
+<div class="d-flex justify-content-center mb-4">
+    <div class="input-group" style="max-width:500px;">
+        <input type="search" class="form-control ps-3" placeholder="Nhập từ khóa..." />
         <button type="button" class="btn btn-success">
             <i class="fa-solid fa-magnifying-glass"></i>
         </button>
-
     </div>
-
 </div>
+
 <hr />
 
 @foreach (var dm in Model)
 {
-    <h3>@dm.TenDm</h3>   
-
+    <h3 class="mt-4 text-primary">@dm.TenDm</h3>
     <div class="row">
-
-        
-        @foreach (var sp in dm.SanPhams)
+        @if (dm.SanPhams != null && dm.SanPhams.Any())
         {
-            <div class="col-md-3">
-                <div class="card mb-3">
-                    <img src="~/image/@sp.Anh"
-                         alt="@sp.TenSp"
-                         class="card-img-top"
-                         style="height:150px;object-fit:cover" />
-                    <div class="card-body">
-                        <h5 class="card-title">@sp.TenSp</h5>
-                        <p class="card-text">@sp.MoTa</p>
-                        <p><strong>@sp.Gia.ToString("N0") đ</strong></p>
+            @foreach (var sp in dm.SanPhams)
+            {
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="~/image/@sp.Anh"
+                             alt="@sp.TenSp"
+                             class="card-img-top"
+                             style="height:180px;object-fit:cover;border-bottom:1px solid #eee;" />
 
-                        <a asp-controller="Home"
-                           asp-action="ChiTietSanPham"
-                           asp-route-id="@sp.MaSp"
-                           class="btn btn-sm btn-info">
-                            Chi tiết
-                        </a>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title text-truncate">@sp.TenSp</h5>
+                            <p class="card-text small text-muted text-truncate">
+                                @sp.MoTa
+                            </p>
+                            <p class="fw-bold text-danger">@sp.Gia.ToString("N0") đ</p>
+                        </div>
 
-                        <a asp-controller="Cart"
-                           asp-action="Add"
-                           asp-route-id="@sp.MaSp"
-                           class="btn btn-sm btn-success">
-                            Thêm vào giỏ
-                        </a>
+                        <div class="card-footer bg-white border-0 d-flex justify-content-between">
+                            <a asp-controller="Home"
+                               asp-action="ChiTietSanPham"
+                               asp-route-id="@sp.MaSp"
+                               class="btn btn-sm btn-outline-info">
+                                Chi tiết
+                            </a>
+
+                            <a asp-controller="GioHangs"
+                               asp-action="ThemVaoGio"
+                               asp-route-id="@sp.MaSp"
+                               class="btn btn-sm btn-success">
+                                Thêm vào giỏ
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
+            }
+        }
+        else
+        {
+            <p class="text-muted fst-italic">Chưa có sản phẩm trong danh mục này.</p>
         }
     </div>
 }

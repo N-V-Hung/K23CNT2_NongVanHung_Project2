@@ -1,41 +1,74 @@
-﻿<nav class="navbar navbar-expand-sm navbar-light bg-light">
-    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">FastFood</a>
-    <div class="collapse navbar-collapse">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" asp-area=""  asp-controller="Home" asp-action="Index">Trang chủ</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" asp-area=""  asp-controller="GioHangs" asp-action="Index">Giỏ hàng</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" asp-area="" asp-controller="DanhMucs" asp-action="Index">Danh Mục</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" asp-area="" asp-controller="DonHangs" asp-action="Index">Don</a>
-            </li>
+﻿@inject IHttpContextAccessor HttpContextAccessor
+@{
+    var role = HttpContextAccessor.HttpContext.Session.GetString("Role");
+    var name = HttpContextAccessor.HttpContext.Session.GetString("UserName");
+}
 
-            <li class="nav-item">
-                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="ThongTin">Thông Tin Liên Hệ</a>
-            </li>
-            @if (Context.Session.GetString("UserRole") == "Admin")
-            {
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" asp-controller="Home" asp-action="Index">FastFood</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" asp-area="" asp-controller="Admin" asp-action="Dashboard">Quản trị</a>
+                    <a class="nav-link text-white" asp-controller="Home" asp-action="Index">Trang chủ</a>
                 </li>
-            }
-        </ul>
-    </div>
-    <!-- ✅ Phần Login/Logout -->
-    <div class="d-flex">
-        @if (User.Identity != null && User.Identity.IsAuthenticated)
-        {
-            <span class="navbar-text text-white me-2">Xin chào @User.Identity.Name!</span>
-            <a class="btn btn-outline-light" asp-controller="Account" asp-action="Logout">Đăng xuất</a>
-        }
-        else
-        {
-            <a class="btn btn-outline-warning" asp-controller="Account" asp-action="Login">Đăng nhập</a>
-        }
+                <li class="nav-item">
+                    <a class="nav-link text-white" asp-controller="Home" asp-action="TatCaSanPham">Sản Phẩm </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" asp-controller="Home" asp-action="ThongTin">Liên Hệ</a>
+                </li>
+
+                @* Nếu là khách hàng *@
+                @if (role == "Customer")
+                {
+                    
+                    <li class="nav-item">
+                        <a class="nav-link text-white" asp-controller="GioHangs" asp-action="Index">Giỏ hàng</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" asp-controller="DonHangs" asp-action="Index">Đơn hàng</a>
+                    </li>
+                }
+
+                @* Nếu là Admin/Nhân viên *@
+                else if (role == "Admin" || role == "Nhân viên")
+                {
+                    <li class="nav-item">
+                        <a class="nav-link text-white" asp-controller="Admin" asp-action="Dashboard">Quản lý</a>
+                    </li>
+                }
+            </ul>
+
+            <!-- Góc phải -->
+            <ul class="navbar-nav">
+                @if (string.IsNullOrEmpty(role))
+                {
+                    <li class="nav-item">
+                        <a class="btn btn-warning ms-2" asp-controller="Auth" asp-action="Login">Đăng nhập</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-light ms-2" asp-controller="Auth" asp-action="RegisterCustomer">Đăng ký</a>
+                    </li>
+                }
+                else
+                {
+                    <li class="nav-item">
+                        <span class="nav-link text-white">Xin chào, @name!</span>
+                    </li>
+                    <li class="nav-item">
+                        <form asp-controller="Auth" asp-action="Logout" method="post" class="d-inline">
+                            <button type="submit" class="btn btn-outline-light ms-2">Đăng xuất</button>
+                        </form>
+                    </li>
+                }
+            </ul>
+        </div>
     </div>
 </nav>

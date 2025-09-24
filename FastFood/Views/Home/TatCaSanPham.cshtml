@@ -1,0 +1,38 @@
+﻿@model IEnumerable<FastFood.Models.SanPham>
+
+<h2>📦 Tất cả sản phẩm</h2>
+<hr />
+
+<div class="row">
+    @foreach (var sp in Model)
+    {
+        <div class="col-md-3 mb-3">
+            <div class="card">
+                <img src="~/image/@sp.Anh"
+                     alt="@sp.TenSp"
+                     class="card-img-top"
+                     style="height:150px;object-fit:cover" />
+
+                <div class="card-body">
+                    <h5 class="card-title">@sp.TenSp</h5>
+                    <p class="card-text">@sp.MoTa</p>
+                    <p><strong>@sp.Gia.ToString("N0") đ</strong></p>
+
+                    <a asp-controller="Home"
+                       asp-action="ChiTietSanPham"
+                       asp-route-id="@sp.MaSp"
+                       class="btn btn-sm btn-info">
+                        Chi tiết
+                    </a>
+
+                    <a asp-controller="GioHangs"
+                       asp-action="ThemVaoGio"
+                       asp-route-id="@sp.MaSp"
+                       class="btn btn-sm btn-success">
+                        Thêm vào giỏ
+                    </a>
+                </div>
+            </div>
+        </div>
+    }
+</div>

@@ -26,6 +26,22 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\dev\K23CNT2_PRJ2\K23CNT2_NongVanHung_Project2\FastFood
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/dev/K23CNT2_PRJ2/K23CNT2_NongVanHung_Project2/FastFood/Views/Admin/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dev/K23CNT2_PRJ2/K23CNT2_NongVanHung_Project2/FastFood/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dev/K23CNT2_PRJ2/K23CNT2_NongVanHung_Project2/FastFood/Views/Auth/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dev/K23CNT2_PRJ2/K23CNT2_NongVanHung_Project2/FastFood/Views/Auth/RegisterCustomer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxSZWdpc3RlckN1c3RvbWVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/dev/K23CNT2_PRJ2/K23CNT2_NongVanHung_Project2/FastFood/Views/DanhMucs/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFuaE11Y3NcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -66,22 +82,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9uSGFuZ3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/dev/K23CNT2_PRJ2/K23CNT2_NongVanHung_Project2/FastFood/Views/GioHangs/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lvSGFuZ3NcQ3JlYXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/dev/K23CNT2_PRJ2/K23CNT2_NongVanHung_Project2/FastFood/Views/GioHangs/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lvSGFuZ3NcRGVsZXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/dev/K23CNT2_PRJ2/K23CNT2_NongVanHung_Project2/FastFood/Views/GioHangs/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lvSGFuZ3NcRGV0YWlscy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/dev/K23CNT2_PRJ2/K23CNT2_NongVanHung_Project2/FastFood/Views/GioHangs/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lvSGFuZ3NcRWRpdC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [D:/dev/K23CNT2_PRJ2/K23CNT2_NongVanHung_Project2/FastFood/Views/GioHangs/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lvSGFuZ3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -92,6 +92,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/dev/K23CNT2_PRJ2/K23CNT2_NongVanHung_Project2/FastFood/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dev/K23CNT2_PRJ2/K23CNT2_NongVanHung_Project2/FastFood/Views/Home/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTZWFyY2guY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dev/K23CNT2_PRJ2/K23CNT2_NongVanHung_Project2/FastFood/Views/Home/TatCaSanPham.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUYXRDYVNhblBoYW0uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/dev/K23CNT2_PRJ2/K23CNT2_NongVanHung_Project2/FastFood/Views/Home/ThongTin.cshtml]
@@ -136,6 +144,26 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/dev/K23CNT2_PRJ2/K23CNT2_NongVanHung_Project2/FastFood/Views/NhanViens/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhblZpZW5zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dev/K23CNT2_PRJ2/K23CNT2_NongVanHung_Project2/FastFood/Views/SanPhams/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FuUGhhbXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dev/K23CNT2_PRJ2/K23CNT2_NongVanHung_Project2/FastFood/Views/SanPhams/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FuUGhhbXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dev/K23CNT2_PRJ2/K23CNT2_NongVanHung_Project2/FastFood/Views/SanPhams/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FuUGhhbXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dev/K23CNT2_PRJ2/K23CNT2_NongVanHung_Project2/FastFood/Views/SanPhams/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FuUGhhbXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dev/K23CNT2_PRJ2/K23CNT2_NongVanHung_Project2/FastFood/Views/SanPhams/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FuUGhhbXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/dev/K23CNT2_PRJ2/K23CNT2_NongVanHung_Project2/FastFood/Views/Shared/Error.cshtml]

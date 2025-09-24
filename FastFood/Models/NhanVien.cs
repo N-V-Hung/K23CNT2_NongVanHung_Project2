@@ -14,4 +14,6 @@ public partial class NhanVien
     public string? Sdt { get; set; }
 
     public string? VaiTro { get; set; }
+
+    public string MatKhau { get; set; } = null!;
 }

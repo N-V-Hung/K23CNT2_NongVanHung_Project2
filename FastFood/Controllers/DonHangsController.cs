@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using FastFood.Models;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using FastFood.Models;
 
 namespace FastFood.Controllers
 {
@@ -21,81 +16,73 @@ namespace FastFood.Controllers
         // GET: DonHangs
         public async Task<IActionResult> Index()
         {
-            var qlbanDoAnContext = _context.DonHangs.Include(d => d.MaKhNavigation);
-            return View(await qlbanDoAnContext.ToListAsync());
+            var role = HttpContext.Session.GetString("Role");
+            var customerId = HttpContext.Session.GetInt32("CustomerId");
+
+            IQueryable<DonHang> query = _context.DonHangs
+                .Include(d => d.MaKhNavigation);
+
+            // Nếu là khách thì chỉ xem đơn hàng của mình
+            if (role == "Customer" && customerId != null)
+            {
+                query = query.Where(d => d.MaKh == customerId);
+            }
+
+            return View(await query.ToListAsync());
         }
 
         // GET: DonHangs/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+            if (id == null) return NotFound();
 
             var donHang = await _context.DonHangs
                 .Include(d => d.MaKhNavigation)
                 .FirstOrDefaultAsync(m => m.MaDh == id);
-            if (donHang == null)
+
+            if (donHang == null) return NotFound();
+
+            // Nếu khách -> chặn xem đơn của người khác
+            var role = HttpContext.Session.GetString("Role");
+            var customerId = HttpContext.Session.GetInt32("CustomerId");
+
+            if (role == "Customer" && donHang.MaKh != customerId)
             {
-                return NotFound();
+                return Unauthorized(); // cấm truy cập
             }
 
             return View(donHang);
         }
 
-        // GET: DonHangs/Create
-        public IActionResult Create()
-        {
-            ViewData["MaKh"] = new SelectList(_context.KhachHangs, "MaKh", "MaKh");
-            return View();
-        }
-
-        // POST: DonHangs/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("MaDh,NgayDat,TrangThai,PhuongThucTt,TongTien,MaKh")] DonHang donHang)
-        {
-            if (ModelState.IsValid)
-            {
-                _context.Add(donHang);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
-            ViewData["MaKh"] = new SelectList(_context.KhachHangs, "MaKh", "MaKh", donHang.MaKh);
-            return View(donHang);
-        }
-
-        // GET: DonHangs/Edit/5
+        // GET: DonHangs/Edit/5 (chỉ Admin mới được sửa)
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null)
+            var role = HttpContext.Session.GetString("Role");
+            if (role != "Admin")
             {
-                return NotFound();
+                return Unauthorized();
             }
 
+            if (id == null) return NotFound();
+
             var donHang = await _context.DonHangs.FindAsync(id);
-            if (donHang == null)
-            {
-                return NotFound();
-            }
-            ViewData["MaKh"] = new SelectList(_context.KhachHangs, "MaKh", "MaKh", donHang.MaKh);
+            if (donHang == null) return NotFound();
+
             return View(donHang);
         }
 
         // POST: DonHangs/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("MaDh,NgayDat,TrangThai,PhuongThucTt,TongTien,MaKh")] DonHang donHang)
+        public async Task<IActionResult> Edit(int id, DonHang donHang)
         {
-            if (id != donHang.MaDh)
+            var role = HttpContext.Session.GetString("Role");
+            if (role != "Admin")
             {
-                return NotFound();
+                return Unauthorized();
             }
+
+            if (id != donHang.MaDh) return NotFound();
 
             if (ModelState.IsValid)
             {
@@ -106,36 +93,32 @@ namespace FastFood.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!DonHangExists(donHang.MaDh))
-                    {
+                    if (!_context.DonHangs.Any(e => e.MaDh == donHang.MaDh))
                         return NotFound();
-                    }
                     else
-                    {
                         throw;
-                    }
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["MaKh"] = new SelectList(_context.KhachHangs, "MaKh", "MaKh", donHang.MaKh);
             return View(donHang);
         }
 
-        // GET: DonHangs/Delete/5
+        // GET: DonHangs/Delete/5 (Admin mới được xóa)
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null)
+            var role = HttpContext.Session.GetString("Role");
+            if (role != "Admin")
             {
-                return NotFound();
+                return Unauthorized();
             }
+
+            if (id == null) return NotFound();
 
             var donHang = await _context.DonHangs
                 .Include(d => d.MaKhNavigation)
                 .FirstOrDefaultAsync(m => m.MaDh == id);
-            if (donHang == null)
-            {
-                return NotFound();
-            }
+
+            if (donHang == null) return NotFound();
 
             return View(donHang);
         }
@@ -145,19 +128,20 @@ namespace FastFood.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
+            var role = HttpContext.Session.GetString("Role");
+            if (role != "Admin")
+            {
+                return Unauthorized();
+            }
+
             var donHang = await _context.DonHangs.FindAsync(id);
             if (donHang != null)
             {
                 _context.DonHangs.Remove(donHang);
+                await _context.SaveChangesAsync();
             }
 
-            await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
-        }
-
-        private bool DonHangExists(int id)
-        {
-            return _context.DonHangs.Any(e => e.MaDh == id);
         }
     }
 }

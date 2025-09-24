@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Admin Dashboard";
+    var userName = Context.Session.GetString("UserName");
+}
+
+<div class="row">
+    <div class="col-3 bg-light border-end" style="min-height:100vh">
+        <h4 class="mt-3">Quản trị</h4>
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link" asp-controller="SanPhams" asp-action="Index">📦 Quản lý sản phẩm</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-controller="DanhMucs" asp-action="Index">📂 Quản lý danh mục</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-controller="DonHangs" asp-action="Index">🧾 Quản lý đơn hàng</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-controller="NhanViens" asp-action="Index">👨‍💼 Quản lý nhân viên</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-controller="KhachHangs" asp-action="Index">🙋‍♂️ Quản lý khách hàng</a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-9 p-4">
+        <h2>Xin chào @userName 👋</h2>
+        <p>Chào mừng bạn đến với trang quản trị hệ thống FastFood.</p>
+    </div>
+</div>

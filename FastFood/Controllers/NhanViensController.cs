@@ -53,7 +53,7 @@ namespace FastFood.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("MaNv,HoTen,Email,Sdt,VaiTro")] NhanVien nhanVien)
+        public async Task<IActionResult> Create([Bind("MaNv,HoTen,Email,Sdt,VaiTro,MatKhau")] NhanVien nhanVien)
         {
             if (ModelState.IsValid)
             {
@@ -85,7 +85,7 @@ namespace FastFood.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("MaNv,HoTen,Email,Sdt,VaiTro")] NhanVien nhanVien)
+        public async Task<IActionResult> Edit(int id, [Bind("MaNv,HoTen,Email,Sdt,VaiTro,MatKhau")] NhanVien nhanVien)
         {
             if (id != nhanVien.MaNv)
             {
