@@ -1,20 +1,22 @@
 ﻿@model IEnumerable<FastFood.Models.DanhMuc>
 
 <div class="banner mb-4">
-    <img src="~/image/banner.jpg" alt="Banner" class="img-fluid w-100 rounded shadow" />
+    <img src="~/images/banner.jpg" alt="Banner" class="img-fluid w-100 rounded shadow" />
 </div>
 
 <h2 class="text-center mb-4">🍔 Trang chủ - Menu đồ ăn</h2>
 
 <!-- Thanh tìm kiếm -->
 <div class="d-flex justify-content-center mb-4">
-    <div class="input-group" style="max-width:500px;">
-        <input type="search" class="form-control ps-3" placeholder="Nhập từ khóa..." />
-        <button type="button" class="btn btn-success">
-            <i class="fa-solid fa-magnifying-glass"></i>
+    <form asp-action="Search" asp-controller="Home" method="get" class="input-group" style="max-width:500px;">
+        <input type="search" name="keyword" class="form-control ps-3" placeholder="Nhập từ khóa..." />
+        <button type="submit" class="btn text-white px-4" style="background: linear-gradient(90deg, #28a745, #20c997); border:none;">
+            <i class="fa-solid fa-magnifying-glass me-1"></i> Tìm
         </button>
-    </div>
+    </form>
 </div>
+
+
 
 <hr />
 
@@ -28,7 +30,7 @@
             {
                 <div class="col-md-3 mb-4">
                     <div class="card h-100 shadow-sm">
-                        <img src="~/image/@sp.Anh"
+                        <img src="~/images/@sp.Anh"
                              alt="@sp.TenSp"
                              class="card-img-top"
                              style="height:180px;object-fit:cover;border-bottom:1px solid #eee;" />
