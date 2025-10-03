@@ -44,6 +44,11 @@ namespace FastFood.Controllers
         {
             return View();
         }
+
+        public IActionResult TinTuc()
+        {
+            return View();
+        }
         public IActionResult TatCaSanPham()
         {
             var sanPhams = _db.SanPhams.ToList();

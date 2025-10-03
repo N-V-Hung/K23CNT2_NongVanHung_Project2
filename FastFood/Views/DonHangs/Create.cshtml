@@ -18,8 +18,13 @@
             </div>
 
             <div class="mb-3">
-                <label asp-for="TrangThai" class="form-label fw-bold">📌 Trạng thái</label>
-                <input asp-for="TrangThai" class="form-control" />
+                <label asp-for="TrangThai" class="form-label">📌 Trạng thái</label>
+                <select asp-for="TrangThai" class="form-select">
+                    <option value="Chờ xác nhận">Đang xử lý</option>
+                    <option value="Đang giao">Đang giao</option>
+                    <option value="Đã giao">Hoàn tất</option>
+                    <option value="Hủy">Đã hủy</option>
+                </select>
                 <span asp-validation-for="TrangThai" class="text-danger"></span>
             </div>
 

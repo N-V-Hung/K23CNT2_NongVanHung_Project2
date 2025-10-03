@@ -4,7 +4,7 @@
     var name = HttpContextAccessor.HttpContext.Session.GetString("UserName");
 }
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-custom">
     <div class="container-fluid">
         <a class="navbar-brand" asp-controller="Home" asp-action="Index">FastFood</a>
 
@@ -19,7 +19,10 @@
                     <a class="nav-link text-white" asp-controller="Home" asp-action="Index">Trang chủ</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" asp-controller="Home" asp-action="TatCaSanPham">Sản Phẩm </a>
+                    <a class="nav-link text-white" asp-controller="Home" asp-action="TatCaSanPham">Thực đơn </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" asp-controller="Home" asp-action="TinTuc">Tin Tức</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-white" asp-controller="Home" asp-action="ThongTin">Liên Hệ</a>

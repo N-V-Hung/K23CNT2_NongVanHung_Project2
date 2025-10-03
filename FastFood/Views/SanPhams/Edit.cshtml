@@ -11,7 +11,8 @@
     <div class="col-md-6">
         <div class="card shadow-sm border-0">
             <div class="card-body">
-                <form asp-action="Edit">
+                <!-- ✅ Thêm enctype để upload file -->
+                <form asp-action="Edit" enctype="multipart/form-data">
                     <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
                     <input type="hidden" asp-for="MaSp" />
 
@@ -33,13 +34,14 @@
                         <span asp-validation-for="Gia" class="text-danger"></span>
                     </div>
 
+                    <!-- ✅ Input file thay cho text -->
                     <div class="form-group mb-3">
-                        <label asp-for="Anh" class="form-label">Hình ảnh</label>
-                        <input asp-for="Anh" class="form-control" placeholder="Tên file ảnh (vd: sp1.jpg)" />
-                        <span asp-validation-for="Anh" class="text-danger"></span>
+                        <label class="form-label">Hình ảnh</label>
+                        <input type="file" name="AnhFile" class="form-control" accept="image/*" />
                         @if (!string.IsNullOrEmpty(Model.Anh))
                         {
                             <div class="mt-2">
+                                <p>Ảnh hiện tại:</p>
                                 <img src="~/images/@Model.Anh" alt="@Model.TenSp" class="img-thumbnail" style="max-width:150px;" />
                             </div>
                         }

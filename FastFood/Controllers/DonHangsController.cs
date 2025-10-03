@@ -57,8 +57,38 @@ namespace FastFood.Controllers
             return View(donHang);
         }
 
-        // GET: DonHangs/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+		// GET: DonHangs/Create
+		public IActionResult Create()
+		{
+			if (GetRole() != "Admin") return Unauthorized();
+
+			// Dropdown chọn khách hàng
+			ViewData["MaKh"] = new SelectList(_context.KhachHangs, "MaKh", "HoTen");
+			return View();
+		}
+
+		// POST: DonHangs/Create
+		[HttpPost]
+		[ValidateAntiForgeryToken]
+		public async Task<IActionResult> Create(DonHang donHang)
+		{
+			if (GetRole() != "Admin") return Unauthorized();
+
+			if (ModelState.IsValid)
+			{
+				_context.Add(donHang);
+				await _context.SaveChangesAsync();
+				return RedirectToAction(nameof(Index));
+			}
+
+			// Nếu ModelState fail, load lại dropdown
+			ViewData["MaKh"] = new SelectList(_context.KhachHangs, "MaKh", "HoTen", donHang.MaKh);
+			return View(donHang);
+		}
+
+
+		// GET: DonHangs/Edit/5
+		public async Task<IActionResult> Edit(int? id)
         {
             if (GetRole() != "Admin") return Unauthorized();
             if (id == null) return RedirectToAction(nameof(Index));

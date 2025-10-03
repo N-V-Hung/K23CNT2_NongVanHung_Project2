@@ -5,14 +5,20 @@
 <h2>📦 Danh sách đơn hàng</h2>
 <hr />
 
-<!-- 🔙 Nút quay lại Dashboard -->
-<a asp-controller="Admin" asp-action="Dashboard" class="btn btn-outline-secondary mb-3">
-    ⬅ Quay lại Dashboard
-</a>
+
 
 <!-- 👉 Chỉ Admin mới thấy nút tạo đơn hàng -->
 @if (HttpContextAccessor.HttpContext.Session.GetString("Role") == "Admin")
+
 {
+     <p>
+    <!-- 🔙 Nút quay lại Dashboard -->
+        <a asp-controller="Admin" asp-action="Dashboard" class="btn btn-outline-secondary mb-3">
+			⬅ Quay lại Dashboard
+		</a>
+       
+    </p>
+
     <p>
         <a asp-action="Create" class="btn btn-success">+ Tạo đơn hàng mới</a>
     </p>

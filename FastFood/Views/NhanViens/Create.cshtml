@@ -29,15 +29,17 @@
                 <input asp-for="Sdt" class="form-control" />
                 <span asp-validation-for="Sdt" class="text-danger"></span>
             </div>
-
             <div class="mb-3">
                 <label asp-for="VaiTro" class="form-label">Vai trò</label>
                 <select asp-for="VaiTro" class="form-control">
-                    <option value="Admin">Admin</option>
-                    <option value="NhanVien">Nhân viên</option>
+                    <option value="Admin">Quản trị viên (Admin)</option>
+                    <option value="Quản lý">Quản lý</option>
+                    <option value="Giao hàng">Giao hàng</option>
+                    <option value="Nhân viên">Nhân viên</option>
                 </select>
                 <span asp-validation-for="VaiTro" class="text-danger"></span>
             </div>
+
 
             <div class="form-group mb-3">
                 <label asp-for="MatKhau" class="form-label">Mật khẩu</label>
